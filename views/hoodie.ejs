@@ -1,0 +1,17 @@
+<%-include('partials/navbar.ejs')%>
+
+
+<p class="title">Hoodies</p>
+
+<!-- slider -->
+<div class="slider">
+   <%hoodies.forEach(hoodie => { %>
+  <div class="slide">
+    <img src="<%=hoodie.img1%>.png" alt="Image" class="slide1">
+    <img src="<%=hoodie.img2%>.png"  alt="Image" class="slide2">
+  </div>  
+    <% }) %>
+  
+</div>
+
+<%-include('partials/footer.ejs')%>

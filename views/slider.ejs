@@ -1,0 +1,13 @@
+<%-include('partials/header.ejs')%>
+
+<!-- slider -->
+<div class="slider">
+   <%tshirts.forEach(tshirt => { %>
+  <div class="slide">
+    <img src="<%=tshirt.img1%>.png" alt="Image" class="slide1">
+    <img src="<%=tshirt.img2%>.png"  alt="Image" class="slide2">
+  </div>  
+    <% }) %>
+  
+</div>
+

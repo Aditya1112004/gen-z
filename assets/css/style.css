@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;padding: 0;
+}
+nav{
+  font-size: 20px;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
+}
+nav .navbar-brand img{
+  width: 140px;
+}
+nav ul li{
+  margin-left: 50px;
+  padding: 5px;
+}
+.nav-link{
+  border-radius: 5px;
+}
+nav ul li .nav-link:hover{
+  /* color: #fff; */
+  color: #8c3bef;
+  /* background-color: #8C3BEF; */
+  transition: .3s;
+}
+
+@media screen and (max-width:991px)and (min-width:300px) {
+  nav ul li{
+    margin-left: 1px;
+  }  
+  nav ul li a{
+    text-align: center;
+  }
+}
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 50px;
+  color: #555555;
+}
+
+/* slider */
+.slider{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.slider .slide{
+  width: 30%;
+  cursor: pointer;
+  margin: 15px 2px;
+  background-color: #eee;
+  border-right: 1px solid rgb(214, 214, 214);
+}
+.slide:nth-child(2)
+.slide:nth-child(5) {
+  background: #d3d3d3;
+}
+.slide:nth-child(3),
+.slide:nth-child(6) {
+  background: #d3d1d1;
+}
+.slide img{
+  width: 100%;
+}
+.slide2{
+  display: block;
+}
+.slide2{
+  display: none;
+}
+.slide:hover>.slide2{
+  display: block;
+}
+.slide:hover>.slide1{
+  display: none;
+}
+
+
+
+/* footer */
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  font-family: serif "roboto";
+  margin-bottom: 20px;
+}
+footer div{
+  width: 50%;
+}
+.footer_info {
+  padding:60px 40px 10px 40px;
+  text-align: center;
+}
+.contact{
+  margin-top: 30px;
+}
+.contact input,.contact button{
+  width: 60%;
+  padding: 5px;
+  margin: 10px 20% 0 20%;
+}
+.contact button{
+  margin-top: 15px;
+  background-color: #8c3bef;
+  border: none;
+  color: #fff;
+}
+
+
+@media screen and (max-width:991px)and (min-width:500px) {
+  .slider .slide{
+    width: 45%;
+  }
+  footer div{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:499px) {
+  .slider .slide{
+    width: 90%;
+    margin: 2px ;
+  }
+  footer div{
+    width: 100%;
+  }
+  footer .footer_info{
+    padding-top: 20px ;
+  }
+}
